@@ -4,10 +4,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 
 
-const postsData: Record<
-  string,
-  { title: string; content: { id: string; text: string }[]; images: { id: string; src: string }[] }
-> = {
+const postsData: BlogProps  = {
   'exploring-the-enchanting-northern-areas-of-pakistan': {
     title: 'Exploring the Enchanting Northern Areas of Pakistan',
     content: [
