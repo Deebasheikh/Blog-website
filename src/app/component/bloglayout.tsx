@@ -1,10 +1,7 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-
-interface BlogProps {
-    p?: string;
-    color?: string;
-    image: string | StaticImageData; // Allow both types
-    name: string;
-    price: string;
-  }
+export default interface BlogProps {
+  [slug: string]: {
+    title: string;
+    content: { id: string; text: string }[];
+    images: { id: string; src: string }[];
+  };
+  };
