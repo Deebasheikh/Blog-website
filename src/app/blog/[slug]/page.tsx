@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
+import BlogProps from '@/app/component/bloglayout';
 
 
 const postsData: BlogProps  = {
